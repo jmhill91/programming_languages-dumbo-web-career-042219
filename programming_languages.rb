@@ -6,5 +6,9 @@ def reformat_languages(languages)
         newFormat[name][:style] << style
       else
         newFormat[name]= type
-        
+        newFormat[name][:style]= style
+      end
+    end
+  end
+  newFormat
 end
