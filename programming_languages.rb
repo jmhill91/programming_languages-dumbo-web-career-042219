@@ -5,4 +5,5 @@ def reformat_languages(languages)
       if newFormat.has_key?(name)
         newFormat[name][:style] << style
       else
+        newFormat
 end
