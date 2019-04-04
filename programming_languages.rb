@@ -1,16 +1,16 @@
 require 'pry'
 
 def reformat_languages(languages)
-  newFormat={}
-  languages.each do |style, lang|
-    lang.each do |name, type|
-      if newFormat.has_key?(name)
-        newFormat[name][:style]<< style
+   newFormat = {} 
+
+   languages.each do |style, description|
+    description.each do |lang, type|
+      if newFormat.has_key?(lang)
+        newFormat[lang][:style] << style
       else
-        newFormat[name]= type
-        newFormat[name][:style]= style
+        newFormat[lang] = type
+        newFormat[lang][:style] = [style]
       end
     end
   end
-  newFormat
-end
+   newFormat
