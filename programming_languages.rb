@@ -1,3 +1,5 @@
+require 'pry'
+
 def reformat_languages(languages)
   newFormat={}
   languages.each do |style, lang|
