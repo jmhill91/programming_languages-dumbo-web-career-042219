@@ -1,4 +1,5 @@
 def reformat_languages(languages)
   newFormat={}
-  languages.each do |type
+  languages.each do |style, name|
+    
 end
